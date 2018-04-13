@@ -1,0 +1,107 @@
+.cooked {
+  .topic-body .contents & {
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+    padding-right: $card-padding-x;
+    padding-left: $card-padding-x;
+  }
+
+  blockquote {
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0 0 ($card-inner-spacer-y / 2);
+  }
+
+  iframe {
+    border: 0;
+    display: block;
+    margin-right: ($card-padding-x * -1);
+    margin-bottom: $card-inner-spacer-y;
+    margin-left: ($card-padding-x * -1);
+    max-width: none;
+    width: calc(100% + #{$card-padding-x * 2});
+  }
+
+  img:not(.avatar):not(.emoji):not(.site-icon):not(.thumbnail) {
+    height: auto;
+    max-width: 100%;
+  }
+
+  p:empty {
+    display: none;
+  }
+
+  pre {
+    border-radius: 0;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+  }
+
+  > :last-child,
+  > .code-highlight:last-child > pre:last-child {
+    margin-bottom: 0;
+  }
+
+  .bd-clipboard {
+    border-radius: 0;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+
+    + pre {
+      border-radius: 0;
+    }
+  }
+}
+
+.lazyYT-container {
+  margin-bottom: $card-inner-spacer-y;
+
+  .cooked & {
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+    max-width: calc(100% + #{$card-padding-x * 2});
+    padding-bottom: 56.25% !important;
+    width: calc(100% + #{$card-padding-x * 2}) !important;
+
+    + .lazyYT-container {
+      border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
+      margin-top: ($card-inner-spacer-y * -1);
+    }
+  }
+}
+
+.lightbox-wrapper {
+  margin-bottom: $card-inner-spacer-y;
+
+  .cooked & {
+    display: block;
+    margin-right: ($card-padding-x * -1);
+    margin-left: ($card-padding-x * -1);
+
+    img {
+      max-height: none;
+      width: 100%;
+    }
+
+    + a {
+      display: block;
+      margin-top: ($card-inner-spacer-y / -2);
+
+      + p {
+        display: block;
+      }
+    }
+
+    .lightbox {
+      display: block;
+    }
+  }
+}

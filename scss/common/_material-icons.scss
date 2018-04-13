@@ -1,0 +1,439 @@
+.fa-angle-double-down {
+  @include material-icons('arrow_drop_down');
+}
+
+.fa-arrow-down {
+  @include material-icons('arrow_downward');
+}
+
+.fa-arrows-h {
+  @include material-icons('swap_horiz');
+}
+
+.fa-arrow-up {
+  @include material-icons('arrow_upward');
+}
+
+.fa-asterisk {
+  @include material-icons('new_releases');
+}
+
+.fa-at {
+  @include material-icons('person_pin');
+}
+
+.fa-backward {
+  @include material-icons('settings_backup_restore');
+}
+
+.fa-bar-chart-o {
+  @include material-icons('insert_chart');
+}
+
+.fa-bars {
+  @include material-icons('menu');
+}
+
+.fa-bed {
+  @include material-icons('airline_seat_flat');
+}
+
+.fa-bold {
+  @include material-icons('format_bold');
+}
+
+.fa-bookmark {
+  @include material-icons('bookmark_border');
+}
+
+.fa-briefcase {
+  @include material-icons('work');
+}
+
+.fa-calendar {
+  @include material-icons('event');
+}
+
+.fa-calendar-plus-o {
+  @include material-icons('event');
+}
+
+.fa-caret-down {
+  @include material-icons('expand_more');
+}
+
+.fa-caret-right {
+  @include material-icons('expand_more');
+}
+
+.fa-caret-up {
+  @include material-icons('expand_less');
+}
+
+.fa-certificate {
+  @include material-icons('brightness_high');
+}
+
+.fa-check {
+  @include material-icons('check');
+}
+
+.fa-check-square-o {
+  @include material-icons('check_box');
+}
+
+.fa-chevron-down {
+  @include material-icons('keyboard_arrow_down');
+}
+
+.fa-chevron-up {
+  @include material-icons('keyboard_arrow_up')
+}
+
+.fa-circle {
+  @include material-icons('lens');
+}
+
+.fa-circle-o {
+  @include material-icons('radio_button_unchecked');
+}
+
+.fa-clipboard {
+  @include material-icons('content_paste');
+}
+
+.fa-close {
+  @include material-icons('close');
+}
+
+.fa-clock-o {
+  @include material-icons('access_time');
+}
+
+.fa-code {
+  @include material-icons('code');
+}
+
+.fa-columns {
+  @include material-icons('view_column');
+}
+
+.fa-copy {
+  @include material-icons('content_copy');
+}
+
+.fa-copyright {
+  @include material-icons('copyright');
+}
+
+.fa-cog {
+  @include material-icons('settings');
+}
+
+.fa-comment {
+  @include material-icons('comment');
+}
+
+.fa-comment-o {
+  @include material-icons('comment');
+}
+
+.fa-compress {
+  @include material-icons('fullscreen_exit');
+}
+
+.fa-desktop {
+  @include material-icons('desktop_mac');
+}
+
+.fa-dot-circle-o {
+  @include material-icons('radio_button_checked');
+}
+
+.fa-download {
+  @include material-icons('file_download');
+}
+
+.fa-ellipsis-h {
+  @include material-icons('more_horiz');
+}
+
+.fa-envelope {
+  @include material-icons('mail');
+}
+
+.fa-envelope-o {
+  @include material-icons('mail_outline');
+}
+
+.fa-exclamation-circle {
+  @include material-icons('error');
+}
+
+.fa-exclamation-triangle {
+  @include material-icons('warning');
+}
+
+.fa-expand {
+  @include material-icons('fullscreen');
+}
+
+.fa-eye {
+  @include material-icons('visibility');
+}
+
+.fa-eye-slash {
+  @include material-icons('visibility_off');
+}
+
+.fa-fast-backward {
+  @include material-icons('skip_previous');
+}
+
+.fa-fast-forward {
+  @include material-icons('skip_next');
+}
+
+.fa-file-text-o {
+  @include material-icons('description');
+}
+
+.fa-flag {
+  @include material-icons('flag');
+}
+
+.fa-folder {
+  @include material-icons('archive');
+}
+
+.fa-forward {
+  @include material-icons('fast_forward');
+}
+
+.fa-gavel {
+  @include material-icons('gavel');
+}
+
+.fa-gear {
+  @include material-icons('settings');
+}
+
+.fa-globe {
+  @include material-icons('public');
+}
+
+.fa-group {
+  @include material-icons('group');
+}
+
+.fa-hand-o-right {
+  @include material-icons('send');
+}
+
+.fa-header {
+  @include material-icons('format_size');
+}
+
+.fa-heart {
+  @include material-icons('favorite');
+}
+
+.fa-italic {
+  @include material-icons('format_italic');
+}
+
+.fa-link {
+  @include material-icons('link');
+}
+
+.fa-list {
+  @include material-icons('list');
+}
+
+.fa-list-alt {
+  @include material-icons('list');
+}
+
+.fa-list-ol {
+  @include material-icons('format_list_numbered');
+}
+
+.fa-list-ul {
+  @include material-icons('format_list_bulleted');
+}
+
+.fa-lock {
+  @include material-icons('lock_outline');
+}
+
+.fa-mail-forward {
+  @include material-icons('forward');
+}
+
+.fa-meh-o {
+  @include material-icons('sentiment_neutral');
+}
+
+.fa-microphone {
+  @include material-icons('mic');
+}
+
+.fa-microphone-slash {
+  @include material-icons('mic_off');
+}
+
+.fa-minus {
+  @include material-icons('remove');
+}
+
+.fa-mobile {
+  @include material-icons('phone_iphone');
+}
+
+.fa-moon-o {
+  @include material-icons('brightness_3');
+}
+
+.fa-paint-brush {
+  @include material-icons('brush');
+}
+
+.fa-pencil {
+  @include material-icons('edit');
+}
+
+.fa-pencil-square-o {
+  @include material-icons('edit');
+}
+
+.fa-picture-o {
+  @include material-icons('crop_original');
+}
+
+.fa-play {
+  @include material-icons('play_arrow');
+}
+
+.fa-plus {
+  @include material-icons('add');
+}
+
+.fa-power-off {
+  @include material-icons('power_settings_new');
+}
+
+.fa-question-circle {
+  @include material-icons('help');
+}
+
+.fa-quote-right {
+  @include material-icons('format_quote');
+}
+
+.fa-refresh {
+  @include material-icons('refresh');
+}
+
+.fa-reply {
+  @include material-icons('reply');
+}
+
+.fa-rocket {
+  @include material-icons('flight_takeoff');
+}
+
+.fa-search {
+  @include material-icons('search');
+}
+
+.fa-shield {
+  @include material-icons('security');
+}
+
+.fa-sign-out {
+  @include material-icons('exit_to_app');
+}
+
+.fa-smile-o {
+  @include material-icons('insert_emoticon');
+}
+
+.fa-square-o {
+  @include material-icons('check_box_outline_blank');
+}
+
+.fa-sun-o {
+  @include material-icons('brightness_5');
+}
+
+.fa-tag {
+  @include material-icons('label');
+}
+
+.fa-tasks {
+  @include material-icons('assignment');
+}
+
+.fa-television {
+  @include material-icons('tv');
+}
+
+.fa-thumb-tack {
+  @include material-icons('flip_to_front');
+
+  &.unpinned {
+    transform: none;
+
+    &::before {
+      content: 'flip_to_back';
+    }
+  }
+}
+
+.fa-times {
+  @include material-icons('close');
+}
+
+.fa-times-circle {
+  @include material-icons('cancel');
+}
+
+.fa-trash {
+  @include material-icons('delete');
+}
+
+.fa-trash-o {
+  @include material-icons('delete');
+}
+
+.fa-undo {
+  @include material-icons('undo');
+}
+
+.fa-unlock {
+  @include material-icons('lock_open');
+}
+
+.fa-unlock-alt {
+  @include material-icons('lock_open');
+}
+
+.fa-upload {
+  @include material-icons('attach_file');
+}
+
+.fa-user {
+  @include material-icons('person');
+}
+
+.fa-user-plus {
+  @include material-icons('person_add');
+}
+
+.fa-users {
+  @include material-icons('people');
+}
+
+.fa-wrench {
+  @include material-icons('settings');
+}

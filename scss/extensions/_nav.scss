@@ -1,0 +1,86 @@
+%nav-pills {
+  > li {
+    margin-right: 1px;
+
+    &.active > a {
+      @extend %nav-pills-active;
+    }
+
+    > a {
+      @extend %btn-flat;
+
+      &.active {
+        @extend %nav-pills-active;
+      }
+
+      body & {
+        display: block;
+        opacity: $nav-link-opacity;
+        text-transform: none;
+
+        @include focus-hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+%nav-pills-active {
+  color: color-dynamic(unquote('$quaternary'));
+  opacity: 1;
+
+  body & {
+    @include focus-hover {
+      background-color: unquote('$quaternary');
+      color: color-dynamic(unquote('$quaternary'));
+    }
+  }
+}
+
+%nav-stacked {
+  background-color: transparent;
+
+  li {
+    border-bottom: 0;
+
+    &.active > a {
+      @extend %nav-stacked-active;
+    }
+
+    > a {
+      @extend %btn-flat;
+
+      &.active {
+        @extend %nav-stacked-active;
+      }
+
+      body & {
+        display: block;
+        opacity: $nav-link-opacity;
+        text-align: left;
+        text-transform: none;
+
+        @include focus-hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+%nav-stacked-active {
+  color: color-dynamic(unquote('$quaternary'));
+  opacity: 1;
+
+  body & {
+    @include focus-hover {
+      background-color: unquote('$quaternary;');
+      color: color-dynamic(unquote('$quaternary'));
+    }
+  }
+
+  &::after {
+    display: none;
+  }
+}

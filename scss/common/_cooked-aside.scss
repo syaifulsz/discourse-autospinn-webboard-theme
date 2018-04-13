@@ -1,0 +1,229 @@
+aside {
+  &.onebox {
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+    border: 0;
+    margin-right: ($card-padding-x * -1);
+    margin-bottom: $card-inner-spacer-y;
+    margin-left: ($card-padding-x * -1);
+    padding: $card-padding-y $card-padding-x;
+
+    header {
+      margin-bottom: ($card-inner-spacer-y / 2);
+
+      &.source {
+        .ember-view & {
+          background-position: 0 50%;
+        }
+      }
+    }
+
+    + .onebox {
+      border-top: 1px solid color-chooser($card-bg-dark, $card-bg-light);
+      margin-top: ($card-inner-spacer-y * -1);
+    }
+
+    .onebox-body {
+      h3,
+      h4 {
+        @extend %typography-h5;
+
+        margin-bottom: ($card-inner-spacer-y / 2);
+        overflow: hidden;
+      }
+
+      img {
+        margin-right: ($card-inner-spacer-x * 2);
+        width: ($card-padding-x * 6);
+      }
+
+      p {
+        overflow: hidden;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &.quote {
+    blockquote {
+      border-radius: 0;
+      width: auto !important;
+    }
+
+    .quote-controls {
+      color: color-chooser($white-secondary, $black-secondary);
+    }
+
+    .title {
+      background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+      border-left: 0;
+      color: color-chooser($white-secondary, $black-secondary);
+      padding: $card-padding-y $card-padding-x 0;
+
+      .cooked & {
+        margin-right: ($card-padding-x * -1);
+        margin-left: ($card-padding-x * -1);
+      }
+
+      .avatar {
+        margin-top: 0;
+        margin-right: $card-inner-spacer-x;
+      }
+    }
+  }
+}
+
+div {
+  &.poll {
+    background-color: color-chooser($card-child-bg-dark, $card-child-bg-light);
+    border: 0;
+    margin: 0 ($card-padding-x * -1) $card-inner-spacer-y;
+    width: calc(100% + #{$card-padding-x * 2});
+
+    .d-editor-preview &,
+    .expanded-quote & {
+      border: 1px solid color-chooser($table-border-color-dark, $table-border-color-light);
+
+      &[data-poll-type='multiple'] {
+        li[data-poll-option-id]::before {
+          @extend %material-icons;
+
+          content: 'check_box_outline_blank';
+        }
+      }
+
+      li[data-poll-option-id]::before {
+        @extend %material-icons;
+
+        content: 'radio_button_unchecked';
+      }
+    }
+
+    .d-editor-preview & {
+      margin-right: 0;
+      margin-left: 0;
+      width: 100%;
+    }
+
+    li {
+      font-size: inherit;
+      margin-bottom: $card-inner-spacer-y;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &[data-poll-option-id] {
+        margin-bottom: $card-inner-spacer-y;
+        padding: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .poll-buttons {
+      border-top-color: color-chooser($table-border-color-dark, $table-border-color-light);
+      padding: ($card-padding-y / 2) ($card-padding-x - $card-inner-spacer-x);
+
+      a {
+        @extend %btn-flat;
+      }
+
+      a,
+      .btn {
+        @extend %btn-footer;
+      }
+
+      .fa {
+        margin-right: $card-inner-spacer-x;
+      }
+
+      .fa-check-square-o,
+      .fa-dot-circle-o {
+        color: unquote('$tertiary');
+      }
+    }
+
+    .poll-container {
+      padding: $card-padding-y $card-padding-x;
+    }
+
+    .poll-info {
+      border-left-color: color-chooser($table-border-color-dark, $table-border-color-light);
+      color: color-chooser($card-color-dark, $card-color-light);
+      padding: $card-padding-y $card-padding-x;
+
+      p {
+        margin: $card-inner-spacer-y 0;
+
+        &:first-child {
+          line-height: 1;
+          margin-top: 0;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .info-number {
+        @extend %typography-h3;
+      }
+
+      .info-text {
+        @extend %typography-h6;
+      }
+    }
+
+    .poll-voters {
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        display: block;
+        margin-right: ($card-inner-spacer-x / 2);
+        margin-bottom: 0;
+      }
+    }
+
+    .poll-voters-list {
+      margin-top: ($card-inner-spacer-y / 4);
+    }
+
+    .results {
+      .bar {
+        @extend %progress-bar;
+
+        background-color: color-chooser($card-color-dark, $card-color-light);
+      }
+
+      .bar-back {
+        @extend %progress-base;
+
+        background-color: color-chooser($card-color-dark, $card-color-light);
+      }
+
+      .chosen {
+        .bar,
+        .bar-back {
+          background-color: $progress-bg;
+        }
+      }
+
+      .percentage {
+        color: color-chooser($card-color-dark, $card-color-light);
+        font-size: inherit;
+        margin-left: $card-inner-spacer-x;
+      }
+
+      .option {
+        margin-bottom: ($card-inner-spacer-y / 4);
+        padding-bottom: 0;
+      }
+    }
+  }
+}

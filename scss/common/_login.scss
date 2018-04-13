@@ -1,0 +1,140 @@
+.caps-lock-warning.invisible {
+  display: none;
+}
+
+.create-account,
+#login-form {
+  input {
+    &[type='email'],
+    &[type='password'],
+    &[type='text'] {
+      @extend %text-field-box;
+
+      display: inline-block;
+      margin-bottom: $spacer-xs;
+    }
+  }
+
+  td {
+    padding-right: $modal-inner-spacer-x;
+    vertical-align: top;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.create-account {
+  table {
+    margin-right: -.5em;
+    width: calc(100% + .5em);
+  }
+
+  tr {
+    &.input {
+      input {
+        margin-bottom: $spacer-xs;
+        width: calc(100% - .5em);
+      }
+
+      td {
+        padding-top: 0;
+
+        &.label {
+          padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+        }
+      }
+
+      .tip {
+        margin-bottom: $spacer-xs;
+        max-width: none;
+      }
+    }
+  }
+
+  .disclaimer {
+    margin-top: $modal-footer-padding-y;
+    padding-right: $card-inner-spacer-x;
+    padding-left: $card-inner-spacer-x;
+    text-align: right;
+    width: 100%;
+  }
+
+  .instructions {
+    label {
+      font-weight: normal;
+    }
+  }
+
+  .modal-body {
+    form {
+      margin-bottom: 0;
+    }
+  }
+
+  .modal-footer {
+    flex-wrap: wrap;
+  }
+}
+
+#login-buttons {
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: $modal-inner-spacer-y;
+
+  @media (min-width: 569px) {
+    display: flex;
+  }
+
+  button {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    margin-right: 0;
+    margin-bottom: ($modal-inner-spacer-y / 2);
+    min-width: 0;
+    width: 100%;
+
+    @media (min-width: 569px) {
+      margin-right: $modal-inner-spacer-x;
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+#login-form {
+  table {
+    width: 100%;
+  }
+
+  td:first-child:not(:empty) {
+    padding-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+  }
+
+  #forgot-password-link {
+    display: block;
+    margin-top: (($text-field-box-height - $font-size-base * $line-height-base) / 2);
+  }
+}
+
+.login-modal {
+  .btn-primary {
+    margin-bottom: 0;
+  }
+
+  .modal-footer {
+    align-items: center;
+  }
+
+  .modal-header + .alert {
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

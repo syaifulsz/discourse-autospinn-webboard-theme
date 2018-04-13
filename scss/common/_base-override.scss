@@ -1,0 +1,34 @@
+// Override some basic CSS rules from Discourse
+
+.btn {
+  &.no-text .fa {
+    line-height: inherit;
+  }
+
+  i {
+    &.fa {
+      opacity: 1;
+    }
+  }
+
+  .fa {
+    margin-right: $spacer-xs;
+  }
+}
+
+.fa-thumb-tack.unpinned {
+  padding-left: 0;
+}
+
+.nav-pills {
+  @extend %nav-pills;
+}
+
+.nav-stacked {
+  @extend %nav-stacked;
+
+  .count {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

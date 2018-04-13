@@ -1,0 +1,21 @@
+.table {
+  @extend %table;
+
+  tbody {
+    td,
+    th {
+      @extend %tbody-cell;
+    }
+
+    tr {
+      @extend %table-row;
+    }
+  }
+
+  thead {
+    td,
+    th {
+      @extend %thead-cell;
+    }
+  }
+}

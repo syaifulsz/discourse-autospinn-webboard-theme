@@ -1,0 +1,88 @@
+.d-editor {
+  border: 0;
+}
+
+.d-editor-button-bar {
+  border-bottom: 0;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  height: auto;
+  margin: 0;
+  min-height: 0;
+  padding: ($card-inner-spacer-y / 2) $card-inner-spacer-x;
+
+  .btn {
+    @extend %btn-sm;
+
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    margin: 0;
+    min-width: 0;
+    padding-right: ($btn-padding-x-sm / 2);
+    padding-left: ($btn-padding-x-sm / 2);
+
+    @include focus-hover {
+      background-color: color-chooser($btn-bg-hover-dark, $btn-bg-hover-light);
+      background-image: none;
+      color: color-chooser($btn-color-dark, $btn-color-light);
+    }
+
+    &:active {
+      background-color: color-chooser($btn-bg-active-dark, $btn-bg-active-light);
+      background-image: none;
+    }
+  }
+}
+
+.d-editor-input {
+  padding: $card-padding-y $card-padding-x;
+
+  @include focus-hover {
+    padding: $card-padding-y $card-padding-x;
+  }
+
+  .d-editor-button-bar ~ & {
+    padding-top: ($card-inner-spacer-y / 2);
+
+    @include focus-hover {
+      padding-top: ($card-inner-spacer-y / 2);
+    }
+  }
+}
+
+.d-editor-preview {
+  border: 1px dotted color-chooser($text-field-border-color-disabled-dark, $text-field-border-color-disabled-light);
+  border-radius: $text-field-box-border-radius;
+  margin: 0;
+  padding: $card-padding-y $card-padding-x;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+.d-editor-preview-wrapper {
+  margin-left: $card-padding-x;
+  max-width: calc(50% - #{$card-padding-x / 2});
+
+  .edit-title & {
+    margin-top: (($card-inner-spacer-y + $text-field-height) * -1);
+  }
+
+  .edit-title .with-tags & {
+    margin-top: (($btn-height + $card-inner-spacer-y * 1.5 + $text-field-height) * -1);
+  }
+}
+
+.d-editor-spacer {
+  background-color: color-chooser($white-divider, $black-divider);
+  height: $btn-height-sm;
+  margin: 0 ($card-inner-spacer-x / 2);
+}
+
+.d-editor-textarea-wrapper {
+  background-color: color-chooser($text-field-box-bg-dark, $text-field-box-bg-light);
+  border: $text-field-border-width solid color-chooser($text-field-border-color-dark, $text-field-border-color-light);
+  border-radius: $text-field-box-border-radius;
+}
